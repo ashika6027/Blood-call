@@ -1,0 +1,134 @@
+.navbar {
+background: linear-gradient(to right, #a93226, #a93226);
+padding: 1rem 2rem;
+display: flex;
+justify-content: center;
+gap: 2rem;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+color: white;
+text-decoration: none;
+font-weight: bold;
+font-size: 1.1rem;
+transition: color 0.3s;
+}
+
+.nav-link:hover {
+color: #ffff99;
+}
+
+.home-fullscreen {
+width: 100vw;
+height: calc(100vh - 80px); /* adjusts for navbar height */
+padding: 2rem;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+background: #f4f1ea;
+}
+
+.home-header {
+max-width: 800px;
+text-align: center;
+}
+
+.home-header h1 {
+color: #c62828;
+margin-bottom: 0.5rem;
+}
+
+.home-header h2 {
+margin-bottom: 1rem;
+}
+
+.home-header ul {
+list-style: none;
+padding: 0;
+margin-top: 1rem;
+line-height: 1.8;
+}
+
+.home-cards {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 2rem;
+margin-top: 3rem;
+}
+
+.home-card {
+background: white;
+border: 2px solid #f8bbd0;
+border-radius: 12px;
+padding: 2rem;
+text-align: center;
+text-decoration: none;
+color: #880e4f;
+width: 280px;
+transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.home-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+border-color: #f06292;
+}
+
+.form-card {
+background: white;
+border: 2px solid #f8bbd0;
+border-radius: 12px;
+padding: 2rem;
+width: max-content;
+height: max-content;
+/* width: 100%; */
+max-width: 80%;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-card h2 {
+text-align: center;
+color: #c62828;
+margin-bottom: 1.5rem;
+}
+
+.form-card input,
+.form-card select {
+width: 100%;
+padding: 0.6rem;
+margin-bottom: 1rem;
+border: 1px solid #ccc;
+border-radius: 6px;
+}
+
+.form-card button {
+background-color: #c62828;
+color: white;
+border: none;
+padding: 0.75rem 1.5rem;
+width: 100%;
+border-radius: 6px;
+font-weight: bold;
+cursor: pointer;
+transition: background 0.3s ease;
+}
+
+.form-card button:hover {
+background-color: #ad1d1d;
+}
+
+@media (max-width: 768px) {
+.navbar {
+flex-wrap: wrap;
+gap: 1rem;
+text-align: center;
+}
+
+.home-card,
+.form-card {
+width: 90% !important;
+}
+}
